@@ -1,22 +1,48 @@
 import React from 'react'
+import GridLayout from './components/GridLayout'
+import Navbar from './Navbar'
+const data = [
+  {
+    label:"abc"
+  },
+   {
+    label:"xyz"
+  }, {
+    label:"mno"
+  }
+]
+const data2 = [
+  {
+    label:"abc"
+  },
+   {
+    label:"xyz"
+  }, {
+    label:"mno"
+  }
+]
+const data3 = [
+  {
+    label:"abc"
+  },
+   {
+    label:"xyz"
+  }, {
+    label:"mno"
+  }
+]
 
 const App = () => {
   return (
-    //responsive 3-column layout using css grid
-
-   <div className='bg-slate-700 w-full min-h-screen text-slate-200 flex justify-center items-center'>
-      <div className='w-150 max-w-4xl  grid grid-flow-row grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 gap-4'>
-      <div className=' border h-40'></div>
-      <div className=' border h-40'></div>
-      <div className=' border h-40'></div>
-      <div className=' border h-40'></div>
-      <div className=' border h-40'></div>
-      <div className=' border h-40'></div>
-      <div className='border h-40 '></div>
-      <div className=' border h-40'></div>
-      <div className=' border h-40'></div>
-      </div>
-      </div> 
+/*<div>
+   <GridLayout />
+  </div> */
+  <div className='bg-slate-800 w-full min-h-screen text-slate-200'>
+  <div className="navbar  ">
+    <Navbar drop ={"Home"} dataItem ={data}/>
+    
+  </div>
+  </div>
   
      
 
